@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Time Table</title>
+
+    <style>
+
+                body {
+            font-family: Arial;
+            background-color: #f2f5f7;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: normal;
+            margin-top: 0;
+        }
+
+        .student-info {
+            width: 1100px;
+            margin: 0 auto 10px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        table {
+            width: 1100px;
+            margin: auto;
+            border-collapse: collapse;
+            table-layout: fixed;
+            background-color: white;
+            border: 3px solid #555;
+        }
+
+        th, td {
+            width: 9.09%;
+            height: 35px;
+            padding: 6px;
+            border: 2px solid #555;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 11px;
+            color: #111;
+        }
+
+        /* Header */
+
+        th {
+            background-color: #dce8f0;
+            color: #111;
+        }
+
+        /* Normal timetable periods */
+
+        td {
+            background-color: #b8c9d4;
+            color: #111;
+        }
+
+        /* Days */
+
+        .day {
+            background-color: #d0dbe2;
+            color: #111;
+            font-weight: bold;
+        }
+
+        /* Lab periods - SAME AS BEFORE */
+
+        .lab {
+            background-color: #dcefdc;
+            color: #205c32;
+            font-weight: bold;
+        }
+
+        /* Tea Break - SAME AS BEFORE */
+
+        .break,
+        .break-header {
+            background-color: #f8e4c4;
+            color: #76501b;
+            font-weight: bold;
+        }
+
+        .break {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+
+        .footer {
+            width: 1100px;
+            margin: 15px auto;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>TIME TABLE FOR THE YEAR - Sep 2026 to Dec 2026</h2>
+
+    <h3>V Sem. B Section, Academic Year 2026-27 (ODD)</h3>
+
+    <div class="student-info">
+        Name: Likith K N<br>
+        USN: 1BI24CS110
+    </div>
+
+    <table>
+
+        <tr>
+            <th>TIME<br>DAYS</th>
+            <th>8:00<br>to<br>9:00</th>
+            <th>9:00<br>to<br>10:00</th>
+            <th class="break-header">10:00<br>to<br>10:30</th>
+            <th>10:30<br>to<br>11:30</th>
+            <th>11:30<br>to<br>12:30</th>
+            <th>12:30<br>to<br>1:30</th>
+            <th>1:30<br>to<br>2:30</th>
+            <th>2:30<br>to<br>3:30</th>
+            <th>3:30<br>to<br>4:30</th>
+            <th>4:30<br>to<br>5:30</th>
+        </tr>
+
+        <!-- MONDAY -->
+
+        <tr>
+            <th rowspan="3" class="day">MON</th>
+            <td>CNS</td>
+            <td>TOC</td>
+            <td rowspan="15" class="break">TEA BREAK</td>
+            <td>AI</td>
+            <td>SE</td>
+            <td>RM</td>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td>KNP</td>
+            <td>SHG</td>
+            <td>MJ</td>
+            <td>MH</td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td>523</td>
+            <td>523</td>
+            <td>523</td>
+            <td>523</td>
+            <td>523</td>
+            <td></td><td></td><td></td><td></td>
+        </tr>
+
+        <!-- TUESDAY -->
+
+        <tr>
+            <th rowspan="3" class="day">TUE</th>
+            <td></td><td></td>
+            <td>AI</td><td>SE</td><td>TOC</td><td>CNS</td>
+            <td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td></td><td></td>
+            <td>MJ</td><td>MH</td><td>SHG</td><td>KNP</td>
+            <td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td></td><td></td>
+            <td>521</td><td>521</td><td>521</td><td>521</td>
+            <td></td><td></td><td></td>
+        </tr>
+
+        <!-- WEDNESDAY -->
+
+        <tr>
+            <th rowspan="3" class="day">WED</th>
+            <td>RM</td>
+            <td>SE</td>
+            <td>TOC</td>
+            <td>AI</td>
+            <td></td>
+            <td colspan="2" class="lab">WT Lab / CNS Lab</td>
+            <td></td><td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>MH</td>
+            <td>SHG</td>
+            <td>MJ</td>
+            <td></td>
+            <td class="lab">B1+B2</td>
+            <td class="lab">B3+B4</td>
+            <td></td><td></td>
+        </tr>
+
+        <tr>
+            <td>523</td>
+            <td>523</td>
+            <td>523</td>
+            <td>523</td>
+            <td></td>
+            <td class="lab">527B</td>
+            <td class="lab">503</td>
+            <td></td><td></td>
+        </tr>
+
+        <!-- THURSDAY -->
+
+        <tr>
+            <th rowspan="3" class="day">THU</th>
+            <td></td><td></td>
+            <td>Online</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td></td><td></td>
+            <td>EVS</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <tr>
+            <td></td><td></td>
+            <td>KRS</td>
+            <td></td><td></td><td></td><td></td><td></td><td></td>
+        </tr>
+
+        <!-- FRIDAY -->
+
+        <tr>
+            <th rowspan="3" class="day">FRI</th>
+            <td colspan="2" class="lab">WT Lab / CNS Lab</td>
+            <td></td>
+            <td>TOC</td>
+            <td>CNS</td>
+            <td></td>
+            <td>RM</td>
+            <td>SE</td>
+            <td></td><td></td>
+        </tr>
+
+        <tr>
+            <td class="lab">B3+B4</td>
+            <td class="lab">B1+B2</td>
+            <td></td>
+            <td>SHG</td>
+            <td>KNP</td>
+            <td></td>
+            <td></td>
+            <td>MH</td>
+            <td></td><td></td>
+        </tr>
+
+        <tr>
+            <td class="lab">503</td>
+            <td class="lab">527B</td>
+            <td></td>
+            <td>527C</td>
+            <td>527C</td>
+            <td></td>
+            <td>527C</td>
+            <td>527C</td>
+            <td></td><td></td>
+        </tr>
+
+        <!-- SATURDAY -->
+
+        <tr>
+            <th rowspan="3" class="day">SAT</th>
+            <td></td>
+            <td colspan="2" class="lab">9 TO 11</td>
+            <td></td>
+            <td colspan="2" class="lab">Remedial class</td>
+            <td></td>
+            <td class="lab">Remedial class</td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="2" class="lab">Skill Lab</td>
+            <td></td>
+            <td>SE</td>
+            <td>AI</td>
+            <td></td>
+            <td>TOC</td>
+            <td>CNS</td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="2" class="lab">527B</td>
+            <td></td>
+            <td>527B</td>
+            <td>527B</td>
+            <td></td>
+            <td>527B</td>
+            <td>527B</td>
+            <td></td>
+        </tr>
+
+    </table>
+
+    <div class="footer">
+        BIT TIMETABLE
+    </div>
+
+</body>
+</html>
